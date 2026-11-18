@@ -327,6 +327,7 @@
 .cel .horarios span.off{color:#B9C0BE;text-decoration:line-through;background:transparent}
 </style>
 <style>body{margin:40px;background:#fff;font-family:var(--fonte-ui);color:var(--tinta)}</style></head><body>
+<div class="oferta-root"><div class="faixa" style="border-radius:18px;margin-bottom:0">Surpresa no final da página <span>↓</span></div></div>
 <h1 style="font:600 28px var(--fonte-display);color:var(--pinho-profundo);margin:0 0 6px">Aurora Odontologia — telas de referência</h1>
 <p style="color:var(--texto-2);margin:0 0 30px">Referência visual do sistema. Dados fictícios. Estilos em <code>sistema.css</code>.</p>
 <h2 style="font:600 20px var(--fonte-display);margin:34px 0 4px">Site público</h2><p style="color:var(--texto-2);margin:0 0 12px">Primeira dobra da página inicial. A foto e os números com asterisco são marcadores: o dono da clínica preenche com dados reais.</p><div style="border:1px solid var(--linha-forte);border-radius:14px;overflow:hidden;width:1282px"><div class="tela site">
@@ -613,4 +614,130 @@
     <span class="btn cta" style="height:44px;justify-content:center;font-size:14px;border-radius:13px">Continuar · qui 19/11 às 14:30</span>
   </div>
 </div></div></div>
+<style>
+  .oferta-root{--pinho:#0F5C56;--pinho-escuro:#0A423E;--pinho-profundo:#0B2F2D;--menta:#DCEEE7;--menta-clara:#EEF6F2;--coral:#E4694B;--verde:#23805A;--texto-2:#4E5B59;--texto-3:#7C8785;--tinta:#152423;--superficie:#FFFFFF;--linha:#E7E2D8;--areia:#F7F4EE;--fonte-display:"Fraunces","Sitka Display","Sitka Heading",Georgia,serif;--fonte-ui:"Manrope","Segoe UI Variable Text","Segoe UI",system-ui,sans-serif;font-family:var(--fonte-ui);color:var(--tinta);background:var(--areia);margin:40px 0 0;padding:0 0 1px;border-radius:18px}
+  .oferta-root *{box-sizing:border-box}
+  .oferta-root .faixa{background:var(--pinho-profundo);color:#fff;text-align:center;padding:14px 16px;font-weight:700;letter-spacing:.02em;border-radius:18px 18px 0 0}
+  .oferta-root .faixa span{color:#F6C9B9}
+  .oferta-root .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  .oferta-root header.topo{padding:56px 0 24px;text-align:center}
+  .oferta-root .marca{font-family:var(--fonte-display);font-size:28px;color:var(--pinho-profundo);font-weight:600}
+  .oferta-root h1{font-family:var(--fonte-display);font-size:44px;line-height:1.15;margin:20px 0 14px;color:var(--pinho-profundo)}
+  .oferta-root h1 em{color:var(--pinho);font-style:italic}
+  .oferta-root .lead{font-size:18px;color:var(--texto-2);max-width:680px;margin:0 auto}
+  .oferta-root .aviso{display:inline-block;margin-top:22px;background:var(--superficie);border:1px solid var(--linha);border-radius:12px;padding:12px 16px;color:var(--texto-2);font-size:14px;max-width:680px}
+  .oferta-root h2{font-family:var(--fonte-display);font-size:30px;margin:0 0 6px;color:var(--pinho-profundo)}
+  .oferta-root .sub{color:var(--texto-2);margin:0 0 24px}
+  .oferta-root .grade{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .oferta-root .card{background:var(--superficie);border:1px solid var(--linha);border-radius:16px;padding:22px}
+  .oferta-root .card b{display:block;font-size:17px;margin-bottom:6px;color:var(--pinho-profundo)}
+  .oferta-root .card p{margin:0;color:var(--texto-2);font-size:15px}
+  .oferta-root .ico{width:40px;height:40px;border-radius:12px;background:var(--menta);color:var(--pinho);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px}
+  .oferta-root section{padding:56px 0}
+  .oferta-root .design{background:var(--menta-clara);border-radius:16px;padding:22px 24px;color:var(--texto-2);font-size:15px;margin:0 20px}
+  .oferta-root .design b{color:var(--pinho-profundo)}
+  .oferta-root .surpresa{background:linear-gradient(160deg,var(--pinho-profundo),var(--pinho-escuro) 55%,var(--pinho));color:#fff;border-radius:28px;padding:56px 28px;text-align:center;position:relative;overflow:hidden}
+  .oferta-root .selo-promo{display:inline-block;background:var(--coral);color:#fff;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:13px;padding:8px 16px;border-radius:999px}
+  .oferta-root .surpresa h2{color:#fff;font-size:40px;margin:18px 0 8px}
+  .oferta-root .surpresa .lead{color:#CFE5DE}
+  .oferta-root .preco-box{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:34px auto 0;max-width:720px;position:relative}
+  .oferta-root .preco{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:26px 20px}
+  .oferta-root .preco .rotulo{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#CFE5DE;font-weight:700}
+  .oferta-root .preco .de{font-size:22px;color:#F3A090;text-decoration:line-through;text-decoration-color:#E4694B;text-decoration-thickness:3px;margin-top:10px;font-weight:700}
+  .oferta-root .preco .valor{font-family:var(--fonte-display);font-size:52px;font-weight:700;line-height:1.1;margin-top:4px;color:#fff}
+  .oferta-root .preco .valor small{font-size:20px;font-family:var(--fonte-ui);font-weight:600;color:#CFE5DE}
+  .oferta-root .preco .nota{font-size:14px;color:#CFE5DE;margin-top:6px}
+  .oferta-root .validade{margin-top:26px;font-size:16px;color:#F6C9B9;font-weight:700}
+  .oferta-root .incluso{background:var(--superficie);border-radius:20px;padding:28px;margin-top:24px;color:var(--tinta);text-align:left}
+  .oferta-root .incluso ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+  .oferta-root .incluso li{padding-left:28px;position:relative;font-size:15px;color:var(--texto-2)}
+  .oferta-root .incluso li:before{content:"✓";position:absolute;left:0;top:0;color:var(--verde);font-weight:900}
+  .oferta-root .incluso h3{font-family:var(--fonte-display);margin:0 0 14px;color:var(--pinho-profundo);font-size:22px}
+  .oferta-root .cta{display:inline-block;margin-top:28px;background:var(--coral);color:#fff;font-weight:800;font-size:17px;padding:16px 30px;border-radius:14px;text-decoration:none;box-shadow:0 10px 24px rgba(228,105,75,.35)}
+  .oferta-root .letra{font-size:13px;color:#CFE5DE;max-width:720px;margin:18px auto 0}
+  .oferta-root footer{text-align:center;color:var(--texto-3);font-size:13px;padding:30px 0 50px}
+  @media (max-width:760px){
+    .oferta-root h1{font-size:34px}
+    .oferta-root .surpresa h2{font-size:30px}
+    .oferta-root .grade,.oferta-root .preco-box,.oferta-root .incluso ul{grid-template-columns:1fr}
+    .oferta-root .preco .valor{font-size:44px}
+    .oferta-root section{padding:40px 0}
+  }
+</style>
+<div class="oferta-root">
+
+
+<div class="wrap">
+  <header class="topo">
+    <div class="marca">Aurora Odontologia</div>
+    <h1>Uma clínica que <em>atende de dia e de noite</em>, sem fila de WhatsApp.</h1>
+    <p class="lead">Site, agendamento online, painel da equipe, portal do paciente e um assistente de WhatsApp que marca consultas sozinho, inclusive quando o paciente manda áudio.</p>
+    <div class="aviso">Esta página mostra a <b>estrutura do sistema</b>. O design é apenas uma demonstração: cores, fontes, fotos e textos são personalizados de acordo com o gosto da sua clínica.</div>
+  </header>
+
+  <section>
+    <h2>O que a clínica ganha</h2>
+    <p class="sub">Cada parte do sistema foi pensada para tirar trabalho da recepção e levar o paciente até a consulta.</p>
+    <div class="grade">
+      <div class="card"><div class="ico">◎</div><b>Site público</b><p>Início, tratamentos, equipe, localização, dúvidas e contato, com agendamento online em 4 passos, pensado para o celular.</p></div>
+      <div class="card"><div class="ico">✦</div><b>Assistente no WhatsApp</b><p>Responde a qualquer hora, marca, remarca, confirma e cancela dentro das regras da clínica. Entende áudios e passa para uma pessoa quando precisa.</p></div>
+      <div class="card"><div class="ico">▦</div><b>Painel da equipe</b><p>Agenda por dia, semana e mês, pacientes com prontuário, odontograma, CRM, conversas em tempo real e financeiro.</p></div>
+      <div class="card"><div class="ico">⌂</div><b>Portal do paciente</b><p>O paciente entra com um código, vê e confirma a consulta, remarca, agenda outra e acessa o histórico e os documentos.</p></div>
+      <div class="card"><div class="ico">⟳</div><b>Automações</b><p>Lembretes antes da consulta, aviso depois de uma falta, convite de retorno e alerta para a equipe quando alguém espera.</p></div>
+      <div class="card"><div class="ico">⛨</div><b>Segurança e LGPD</b><p>Cada pessoa vê só o que pode ver, dados sensíveis cifrados, registro de auditoria e pedidos de exclusão pelo portal.</p></div>
+    </div>
+  </section>
+
+  <section class="design">
+    <b>Sobre o design.</b> Este material é uma demonstração da estrutura do sistema. O visual final é feito de acordo com o gosto da clínica: paleta, tipografia, fotos e tom de voz do assistente.
+  </section>
+
+  <section>
+    <div class="surpresa">
+      <span class="selo-promo">Promoção de lançamento</span>
+      <h2>Sua clínica no ar em poucos dias</h2>
+      <p class="lead">Implantação completa com o seu nome, os seus tratamentos e os seus horários. Você só cuida dos pacientes.</p>
+
+      <div class="preco-box">
+        <div class="preco">
+          <div class="rotulo">Implantação (pagamento único)</div>
+          <div class="de">De R$ 5.000</div>
+          <div class="valor">R$ 3.500</div>
+          <div class="nota">valor promocional</div>
+        </div>
+        <div class="preco">
+          <div class="rotulo">Mensalidade</div>
+          <div class="de">&nbsp;</div>
+          <div class="valor">R$ 500<small>/mês</small></div>
+          <div class="nota">tudo incluso</div>
+        </div>
+      </div>
+
+      <div class="validade">Oferta válida até 30/11/2026</div>
+
+      <div class="incluso">
+        <h3>Tudo incluso</h3>
+        <ul>
+          <li>Site público com agendamento online</li>
+          <li>Assistente de WhatsApp com IA</li>
+          <li>Painel completo da equipe</li>
+          <li>Portal do paciente</li>
+          <li>Automações de lembretes e retornos</li>
+          <li>Configuração de tratamentos, preços e horários</li>
+          <li>Hospedagem, backup e suporte</li>
+          <li>Treinamento da equipe</li>
+          <li>LGPD: termos, exclusão e auditoria</li>
+          <li>Ajustes de design e textos ao seu gosto</li>
+        </ul>
+      </div>
+
+      <p class="letra">Não estão incluídos os custos cobrados diretamente pelos fornecedores de terceiros, como as tarifas de conversa da Meta (WhatsApp) e o uso da API de IA, que são pagos pela clínica conforme o consumo.</p>
+
+      <a class="cta" href="#">Quero aproveitar esta oferta</a>
+    </div>
+  </section>
+</div>
+
+<footer>Dados fictícios. Demonstração da estrutura do sistema Aurora Odontologia.</footer>
+</div>
 </body></html>
